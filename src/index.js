@@ -1,3 +1,6 @@
+require("dotenv").config();
 import { app } from "./app";
 
-app.listen(8004, () => console.log(`working at ${8004}`));
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => console.log(`working at ${PORT}`));
