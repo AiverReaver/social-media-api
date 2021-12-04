@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node ./src/index.js"
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "build": "babel src -s -D -d dist"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "sequelize": "^6.12.0-alpha.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
     "nodemon": "^2.0.15"
   }
 }
