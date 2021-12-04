@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { body } from "express-validator";
 import { postController } from "../controllers/PostController";
-import { authMiddleware } from "../middlewares/AuthMiddleware";
+import { authMiddleware } from "../middlewares/authMiddleware";
 
 const postRouter = Router();
 

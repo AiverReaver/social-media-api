@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { body } from "express-validator";
 import { commentController } from "../controllers/CommentController";
-import { authMiddleware } from "../middlewares/AuthMiddleware";
+import { authMiddleware } from "../middlewares/authMiddleware";
 
 const commentRouter = Router();
 
