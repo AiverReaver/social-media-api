@@ -20,6 +20,10 @@ export default (sequelize, DataTypes) => {
         foreignKey: "user_to",
         as: "followers",
       });
+      this.hasMany(models.Post, {
+        foreignKey: "user_id",
+        as: "posts",
+      });
     }
   }
   User.init(
