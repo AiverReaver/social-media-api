@@ -20,4 +20,7 @@ postRouter.post(
 
 postRouter.delete("/posts/:id", authMiddleware, postController.destroy);
 
+postRouter.get("/posts/:id", postController.getPost);
+postRouter.get("/all_posts", authMiddleware, postController.allPost);
+
 export { postRouter };

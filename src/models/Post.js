@@ -16,6 +16,14 @@ export default (sequelize, DataTypes) => {
         foreignKey: "user_id",
         as: "user",
       });
+      this.hasMany(models.Like, {
+        foreignKey: "post_id",
+        as: "likes",
+      });
+      this.hasMany(models.Comment, {
+        foreignKey: "post_id",
+        as: "comments",
+      });
     }
   }
   Post.init(
